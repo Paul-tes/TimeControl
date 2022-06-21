@@ -1,0 +1,11 @@
+C:\Users\joy\source\repos\TimeControl\TimeControl\bin\Debug\TimeControl.exe.config
+C:\Users\joy\source\repos\TimeControl\TimeControl\bin\Debug\TimeControl.exe
+C:\Users\joy\source\repos\TimeControl\TimeControl\bin\Debug\TimeControl.pdb
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.csproj.AssemblyReference.cache
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.csproj.SuggestedBindingRedirects.cache
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.Form1.resources
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.Properties.Resources.resources
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.csproj.GenerateResource.cache
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.csproj.CoreCompileInputs.cache
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.exe
+C:\Users\joy\source\repos\TimeControl\TimeControl\obj\Debug\TimeControl.pdb
