@@ -41,6 +41,7 @@
             this.lb_LastName = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnPause = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -93,22 +94,22 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(35, 199);
+            this.btnStart.Location = new System.Drawing.Point(12, 199);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(95, 28);
+            this.btnStart.Size = new System.Drawing.Size(86, 28);
             this.btnStart.TabIndex = 5;
-            this.btnStart.Text = "start";
+            this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.start_Click);
             // 
             // btnStop
             // 
             this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.Location = new System.Drawing.Point(153, 199);
+            this.btnStop.Location = new System.Drawing.Point(208, 199);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(95, 28);
             this.btnStop.TabIndex = 6;
-            this.btnStop.Text = "stop";
+            this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
@@ -152,11 +153,23 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // btnPause
+            // 
+            this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPause.Location = new System.Drawing.Point(111, 199);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(89, 27);
+            this.btnPause.TabIndex = 11;
+            this.btnPause.Text = "Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 450);
+            this.Controls.Add(this.btnPause);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lb_LastName);
             this.Controls.Add(this.textBox1);
@@ -189,6 +202,7 @@
         private System.Windows.Forms.Label lb_LastName;
         private System.Windows.Forms.TextBox textBox2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnPause;
     }
 }
 

@@ -36,23 +36,31 @@ namespace TimeControl
         {
             if (!timer1.Enabled)
             {
-                timer1.Start();
-                lbMin.Text = "0";
-                lbSec.Text = "0";
+                if (int.Parse(lbMin.Text) > 0 || int.Parse(lbSec.Text) > 0)
+                {
+                    timer1.Start();
+                } else
+                {
+                    timer1.Start();
+                    lbMin.Text = "0";
+                    lbSec.Text = "0";
+                }
+                
             }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            //btnStart.PerformClick();
+            lbMin.Text = "0";
+            lbSec.Text = "0";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             int sec = int.Parse(lbSec.Text);
             int min = int.Parse((lbMin.Text));
+
             if (sec < 60)
             {
                 sec++;
@@ -86,6 +94,12 @@ namespace TimeControl
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
  
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+
         }
     }
 }
