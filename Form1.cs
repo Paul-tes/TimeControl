@@ -34,9 +34,12 @@ namespace TimeControl
 
         private void start_Click(object sender, EventArgs e)
         {
-            timer1.Start();
-            lbMin.Text = "0";
-            lbSec.Text = "0";
+            if (!timer1.Enabled)
+            {
+                timer1.Start();
+                lbMin.Text = "0";
+                lbSec.Text = "0";
+            }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
