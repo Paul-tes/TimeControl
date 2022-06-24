@@ -101,5 +101,23 @@ namespace TimeControl
             timer1.Stop();
 
         }
+
+        private void textBox_FN(object sender, EventArgs e)
+        {
+            string name = tb_FirstName.Text;
+            string s1 = name.Substring(0, 1).ToUpper();
+            string s2 = name.Substring(1).ToLower();
+            name = s1 + s2;
+            tb_FirstName.Text = name;
+        }
+
+        private void tb_LastName_Leave(object sender, EventArgs e)
+        {
+            string name = tb_LastName.Text;
+            string s1 = name.Substring(0,1).ToUpper();
+            string s2 = name.Substring(1).ToLower();
+            name = s1 + s2;
+            tb_LastName.Text = name;
+        }
     }
 }

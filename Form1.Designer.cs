@@ -37,9 +37,9 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.lb_fName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_FirstName = new System.Windows.Forms.TextBox();
             this.lb_LastName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_LastName = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnPause = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -124,12 +124,13 @@
             this.lb_fName.Text = "First Name";
             this.lb_fName.Click += new System.EventHandler(this.lb_fName_Click);
             // 
-            // textBox1
+            // tb_FirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 297);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 8;
+            this.tb_FirstName.Location = new System.Drawing.Point(104, 297);
+            this.tb_FirstName.Name = "tb_FirstName";
+            this.tb_FirstName.Size = new System.Drawing.Size(199, 20);
+            this.tb_FirstName.TabIndex = 8;
+            this.tb_FirstName.Leave += new System.EventHandler(this.textBox_FN);
             // 
             // lb_LastName
             // 
@@ -142,12 +143,13 @@
             this.lb_LastName.Text = "Last Name";
             this.lb_LastName.Click += new System.EventHandler(this.lb_LastName_Click);
             // 
-            // textBox2
+            // tb_LastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 344);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 10;
+            this.tb_LastName.Location = new System.Drawing.Point(104, 344);
+            this.tb_LastName.Name = "tb_LastName";
+            this.tb_LastName.Size = new System.Drawing.Size(199, 20);
+            this.tb_LastName.TabIndex = 10;
+            this.tb_LastName.Leave += new System.EventHandler(this.tb_LastName_Leave);
             // 
             // backgroundWorker1
             // 
@@ -170,9 +172,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 450);
             this.Controls.Add(this.btnPause);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tb_LastName);
             this.Controls.Add(this.lb_LastName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_FirstName);
             this.Controls.Add(this.lb_fName);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -198,9 +200,9 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label lb_fName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_FirstName;
         private System.Windows.Forms.Label lb_LastName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_LastName;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnPause;
     }
